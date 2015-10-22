@@ -1,0 +1,47 @@
+{
+  "uid" : "d6aa09ecb5261a7d",
+  "name" : "checkApp[1]",
+  "title" : "Check app [1]",
+  "time" : {
+    "start" : 1445503694263,
+    "stop" : 1445503694264,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "b87a6496d3d557cd",
+    "name" : "ru.maven.app.AppTest",
+    "title" : "App test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "Alex-nout7"
+  }, {
+    "name" : "thread",
+    "value" : "5773@Alex-nout7.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "ru.maven.app.AppTest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

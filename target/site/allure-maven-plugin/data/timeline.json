@@ -1,0 +1,53 @@
+{
+  "hosts" : [ {
+    "title" : "Alex-nout7",
+    "threads" : [ {
+      "title" : "5773@Alex-nout7.main(1)",
+      "testCases" : [ {
+        "uid" : "4180a6903658000a",
+        "name" : "checkApp[0]",
+        "title" : "Check app [0]",
+        "time" : {
+          "start" : 1445503693792,
+          "stop" : 1445503693821,
+          "duration" : 29
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "d6aa09ecb5261a7d",
+        "name" : "checkApp[1]",
+        "title" : "Check app [1]",
+        "time" : {
+          "start" : 1445503694263,
+          "stop" : 1445503694264,
+          "duration" : 1
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "1e54e1ce1197aa86",
+        "name" : "checkApp[2]",
+        "title" : "Check app [2]",
+        "time" : {
+          "start" : 1445503694281,
+          "stop" : 1445503694282,
+          "duration" : 1
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "646d3353e219dce0",
+        "name" : "checkApp[3]",
+        "title" : "Check app [3]",
+        "time" : {
+          "start" : 1445503694294,
+          "stop" : 1445503694294,
+          "duration" : 0
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}

@@ -21,26 +21,37 @@ public class AppTest {
     public char operation;
     public int resultat;
 
-    public AppTest(int operand1, int operand2, char operation, int resultat) {
-        this.operand1 = operand1;
-        this.operand2 = operand2;
-        this.operation = operation;
-        this.resultat = resultat;
+    public AppTest(String operand1, String operand2, String operation, String resultat) {
+        this.operand1 = Integer.parseInt(operand1);
+        this.operand2 = Integer.parseInt(operand2);
+        this.operation = operation.charAt(0);
+        this.resultat = Integer.parseInt(resultat);
     }
 
     @Test
     public void checkApp() {
-        App app = new App(operand1, operand2, operation);
+        App app = new App(operand1,operand2,operation);
         int result = app.getResult();
         assertEquals(resultat, result);
     }
 
     @Parameterized.Parameters
     public static Collection<Object[]> getTestData() {
-        //Реализовать метод создания массива из файла
-        return Arrays.asList(new Object[][] { 
-        {2, 2,'+',4}, {2, 0,'-',2}, {-1, 2,'*', -2}, {0, 2,'/', 0}
-        });
+        Collection<Object[]> arr = new ArrayList<Object[]>();
+        try{
+            FileInputStream fstream = new FileInputStream("file.txt");
+            BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+            String strLine;
+            int i=0;
+            while ((strLine = br.readLine()) != null){
+                String[] str_mass = strLine.split(";");
+                arr.add(str_mass);
+                i+=1;
+           }
+        }catch (IOException e){
+          System.out.println("Ошибка"+e);
+        }
+        return arr;
     }
 }
 
